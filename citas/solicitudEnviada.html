@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="../css/gic.css">
+		<link rel="stylesheet" href="../css/pages/citas.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="../index.html" class="home">
+					<h1 class="logo">Gestor Inteligente de Citas</h1>
+				</a>
+
+				<!-- Menu principal -->
+				<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="citas.html" class="citas active flaticon-calendar68"><span>Citas</span></a>
+						</li>
+						<li>
+							<a href="../evaluacion/miRanking.html" class="evaluacion flaticon-verification5"><span>Evaluación</span></a>
+						</li>
+						<li>
+							<a href="../mensajeria/mensajeria.html" class="mensajeria flaticon-black218"><span>Mensajería</span></a>
+						</li>
+						<li>
+							<a href="../reportes/reportes.html" class="reportes flaticon-seo2"><span>Reportes</span></a>
+						</li>
+						<li>
+							<a href="../configuracion/perfil.html" class="configuracion flaticon-machine2"><span>Configuración</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="busqueda">
+					<input id="q" type="text" value="" placeholder="Buscar personas" />
+					<button id="btnBuscar" class="flaticon-magnifier12" type="submit"></button>
+				</section>
+
+				<section class="usr-info">
+					<span class="usr-greeting">Bienvenido, Álvaro!</span>
+					<img class="usr-photo" src="../images/users/default-user.png" width="40" height="40">
+					<ul>
+						<li>
+							<a href="../configuracion/perfil.html" class="usr-editar-perfil">Mi cuenta</a>
+						</li>
+						<li>
+							<a href="../seguridad/iniciarSesion.html" class="usr-cerrar-sesion">Cerrar sesión</a>
+						</li>
+					</ul>
+				</section>
+			</header>
+
+			<aside>
+				<nav class="secondary-nav">
+					<ul class="sec-nav-category">
+						<li class="accordion-item">
+							<a href="citas.html">Agenda</a>							
+						</li>
+						<li class="accordion-item expanded">
+							<span id="crearSolicitud" class="flaticon-add73"></span>
+							<a href="solicitudes.html" class="active">Solicitudes de cita</a>
+							<ul class="thrd-nav-category accordion-detail">
+								<li><a href="solicitudes.html">Ernesto Rivera</a></li>
+								<li><a href="solicitudesEstudiantes.html">Pablo Monestel</a></li>
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="solicitudInfo.html">Alejandro Leiva</a>
+								</li>
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="#">Olger Cubillo</a>
+								</li>
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="#">Rocío Solano</a>
+								</li>
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="#">Alejandro Villalobos</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+			<main>
+				<section class="msg-confirm">
+					<div class="mod-hd">
+						<h2 class="flaticon-cancel17">La solicitud de cita de atención ha sido realizada</h2>
+					</div>
+					<div class="mod-bd">
+						<p>Se ha enviado un mensaje al correo electrónico de <strong>Antonio Luna</strong> para notificarle que tiene una solicitud de cita nueva.</p>
+
+						<a href="solicitudes.html" class="btn btn-default">Volver</a>
+					</div>
+				</section>
+			</main>
+			
+			<footer>
+				<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<!-- Load JS -->
+        <script src="../js/common-logic.js"></script>
+		<script src="../js/solicitarCita.js"></script>
+	</body>
+</html>

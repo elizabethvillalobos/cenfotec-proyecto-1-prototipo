@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="../../css/gic.css">
+		<link rel="stylesheet" href="../../css/pages/configuracion.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="../../index-Estudiante.html" class="home">
+					<h1 class="logo">Gestor Inteligente de Citas</h1>
+				</a>
+
+				<!-- Menu principal -->
+				<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="../../citas/Estudiante/citas-Estudiante.html" class="citas flaticon-calendar68"><span>Citas</span></a>
+						</li>
+						<li>
+							<a href="../../evaluacion/Estudiante/miRanking-Estudiante.html" class="evaluacion  flaticon-verification5"><span>Evaluación</span></a>
+						</li>
+						<li>
+							<a href="../../mensajeria/Estudiante/mensajeria-Estudiante.html" class="mensajeria flaticon-black218"><span>Mensajería</span></a>
+						</li>
+						<li>
+							<a href="../../reportes/Estudiante/reportes-Estudiante.html" class="reportes flaticon-seo2"><span>Reportes</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="busqueda">
+					<input id="q" type="text" value="" placeholder="Buscar personas" />
+					<button id="btnBuscar" class="flaticon-magnifier12" type="submit"></button>
+				</section>
+
+				<section class="usr-info">
+					<span class="usr-greeting">Bienvenido, Diego!</span>
+					<img class="usr-photo" src="../../images/users/diego-barillas.jpg" width="40" height="40">
+					<ul>
+						<li>
+							<a href="perfil-Estudiante.html" class="usr-editar-perfil">Mi cuenta</a>
+						</li>
+						<li>
+							<a href="../../seguridad/iniciarSesion.html" class="usr-cerrar-sesion">Cerrar sesión</a>
+						</li>
+					</ul>
+				</section>
+			</header>
+
+			<aside>
+                <nav class="secondary-nav">
+                    <ul class="sec-nav-category accordion">
+                        <li class="accordion-item">
+                            <a href="perfil-Estudiante.html" class="active">Perfil</a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="miCuenta-Estudiante.html">Cambiar contraseña</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </aside>
+
+			<main>
+				<section class="perfil-modificar">
+					<div class="mod-hd">
+						<h2>Modificar perfil</h2>
+					</div>
+					<!-- El atributo novalidate es para evitar que el browser 
+					haga las validaciones. -->
+					<form id="editar-modificar" class="mod-bd form-horizontal" action="perfilGuardado-Estudiante.html" method="post" data-validate="true" novalidate>
+						<div class="form-row">
+							<label for="perfil-nombre">Nombre:</label>
+							<input id="perfil-nombre" type="text" placeholder="Ingrese el nombre" class="form-control" value="Diego" required/>
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-apellido-1">Primer apellido:</label>
+							<input id="perfil-apellido-1" type="text" placeholder="Ingrese el primer apellido" class="form-control" value="Barillas" required/>
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-apellido-2">Segundo apellido:</label>
+							<input id="perfil-apellido-2" type="text" placeholder="Ingrese el segundo apellido" class="form-control" value="Valverde" required/>
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-avatar">Avatar:</label>
+							<!-- Drop media element -->
+                			<div class="media-drop">
+			                    <div id="droppedimage">
+			                    	<img src="../../images/users/diego-barillas.jpg">
+			                    </div>
+			                    <div id="dropbox" class="media-drop-placeholder" style="width: 200px; height: 200px;">
+			                        <span class="media-drop-placeholder-title">Arrastrar imagen aquí</span>
+			                        <span class="media-drop-placeholder-or">o</span>
+
+			                        <div class="media-drop-placeholder-uploadbutton">
+			                            <input id="realUploadBtn" name="media-drop-placeholder-file" type="file" accept="image/*" tabindex="-1"/>
+			                            <button id="uploadBtn" type="button" class="btn" tabindex="-1">Buscar archivo&hellip;</button>
+			                        </div>
+			                    </div>
+			                    <!-- Error message placeholder. -->
+	                			<p class="help-block error errormessages"></p>
+
+	                			<button id="resetupload" type="button" class="btn btn-default">Subir nueva imagen</button>
+	                		</div>
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-email">Correo electrónico:</label>
+							<input id="perfil-email" type="email" placeholder="Ingrese el correo electrónico" class="form-control" data-validate-type="email" required/>
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-telefono">Teléfono:</label>
+							<input id="perfil-telefono" type="text" placeholder="Ingrese el número telefónico" class="form-control" data-validate-type="phone" value="2568-5635" />
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-skype">Skype id:</label>
+							<input id="perfil-skype" type="text" placeholder="Ingrese la cuenta de Skype" class="form-control" value="diego.barillas" />
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-rol">Rol:</label>
+							<span class="data">Estudiante</span>
+						</div>
+
+						 <div class="form-row">
+							<label for="perfil-carrera">Carrera:</label>
+							<span class="data">Desarrollo de software</span>
+						</div>
+
+						<div class="form-row">
+							<label for="perfil-cursos">Cursos:</label>
+							<span class="data">Proyecto de ingeniería del software 1</span>
+						</div>
+
+<!--
+						<div class="form-row">
+							<label for="perfil-horario">Horario:</label>
+							<span class="data">Lunes, Martes y Jueves de 4:00 p.m. a 6:00 p.m.</span>
+						</div> 
+-->
+
+						<div class="form-row form-row-button">
+							<button id="btn-guardar-perfil" class="btn btn-primary" type="submit">Guardar</button>
+						</div>
+					</form>
+				</section>
+			</main>
+			
+			<footer>
+				<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<!-- Load JS -->
+		<script src="../../js/vendors/jquery-1.8.3.min.js"></script>
+        <script src="../../js/vendors/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="../../js/vendors/jquery.html5uploader-1.1.js"></script>
+        <script src="../../js/vendors/bootstrap.min.js"></script>
+        <script src="../../js/vendors/bootstrap-select.js"></script>
+        <script src="../../js/flatui.js"></script>
+        <script src="../../js/html5uploader.js"></script>
+        <script src="../../js/common-logic.js"></script>
+        <script src="../../js/configuracion.js"></script>
+	</body>
+</html>

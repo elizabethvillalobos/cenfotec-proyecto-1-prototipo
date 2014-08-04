@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../css/gic.css">
+
+	<link rel="stylesheet" href="../css/pages/configuracion.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+					<a href="../index.html" class="home">
+						<h1 class="logo">Gestor Inteligente de Citas</h1>
+					</a>
+
+					<!-- Menu principal -->
+					<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="../citas/citas.html" class="citas flaticon-calendar68"><span>Citas</span></a>
+						</li>
+						<li>
+							<a href="../evaluacion/miRanking.html" class="evaluacion flaticon-verification5"><span>Evaluación</span></a>
+						</li>
+						<li>
+							<a href="../mensajeria/mensajeria.html" class="mensajeria flaticon-black218"><span>Mensajería</span></a>
+						</li>
+						<li>
+							<a href="../reportes/reportes.html" class="reportes flaticon-seo2"><span>Reportes</span></a>
+						</li>
+						<li>
+							<a href="perfil.html" class="configuracion active flaticon-machine2"><span>Configuración</span></a>
+						</li>
+					</ul>
+				</nav>
+
+					<section class="busqueda">
+						<input id="q" type="text" value="" placeholder="Buscar personas" />
+						<button id="btnBuscar" class="flaticon-magnifier12" type="submit"></button>
+					</section>
+
+				<section class="usr-info">
+					<span class="usr-greeting">Bienvenido, Carlos!</span>
+					<img class="usr-photo" src="../images/users/administrador.jpg" width="40" height="40">
+					<ul>
+						<li>
+							<a href="perfil.html" class="usr-editar-perfil">Mi cuenta</a>
+						</li>
+						<li>
+							<a href="../seguridad/iniciarSesion.html" class="usr-cerrar-sesion">Cerrar sesión</a>
+						</li>
+					</ul>
+				</section>
+			</header>
+		<aside>
+                <nav class="secondary-nav">
+                    <ul class="sec-nav-category accordion">
+                        <li class="accordion-item">
+                            <a href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="miCuenta.html">Mi cuenta</a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="consultarCarreras.html" class="active">Carreras y cursos</a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="consultarUsuario.html">Usuarios</a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="configuracionGeneral.html">General</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+		<main>
+			<section class="perfil-editar">
+				<div class="mod-hd">
+					<h2>Ingeniería de Software - Crear un nuevo curso</h2>
+				</div>
+					<!-- El atributo novalidate es para evitar que el browser 
+					haga las validaciones. -->
+					<form id="crear-carrera" class="mod-bd form-horizontal" action="consultarCursoAgregadoEditado.html" method="post" 
+					data-validate="true" novalidate>
+					<div class="form-row">
+						<label for="codigo-curso">Codigo:</label>
+						<input id="codigo-curso" type="text" placeholder="Ingrese el codigo"  value="INF-02" class="form-control" 
+						onkeypress="return soloGuion(event)" required/>
+					</div>
+
+					<div class="form-row">
+						<label for="nombre-curso">Nombre:</label>
+						<input id="nombre-curso" type="text" placeholder="Ingrese el nombre" value="Fundamentos de programación"class="form-control" 
+						onkeypress="return soloLetras(event)" required/>
+					</div>
+					<div class="form-row">
+						<label for="txtInvitado1">Profesor(es):</label>
+						<input id="txtInvitado1" type="text" placeholder="Antonio Luna" class="inputExplore nombreProfe" disabled/>
+						<button type="button" class="btn btnIcon btn-default evaluacion flaticon-magnifier12 btnSelectInvitado"></button>
+					</div>
+					<div class="form-row">
+						<label for="txtInvitado2"></label>
+						<input id="txtInvitado2" type="text" placeholder="Seleccione un profesor" class="inputExplore nombreProfe" disabled/>
+						<button type="button" class="btn btn-default evaluacion flaticon-magnifier12 btnIcon btnSelectInvitado"></button>
+					</div>
+					<div class="form-row">
+						<label for="txtInvitado3"></label>
+						<input id="txtInvitado3" type="text" placeholder="Seleccione un profesor" class="inputExplore nombreProfe" disabled/>
+						<button type="button"  class="btn btn-default evaluacion flaticon-magnifier12 btnIcon btnSelectInvitado"></button>
+					</div>
+
+					<div class="form-row form-row-button">
+						<button id="btn-guardar-curso" class="btn btn-primary" type="submit">Guardar</button>
+						<!--<button id="btn-cancelar" class="btn btn-secondary" type="submit">Cancelar</button>-->
+						<a href="crearCarrera-cancelar.html" class="btn btn-default js-modal" 
+						data-modal-id="modal-cancelar">Cancelar</a>
+					</div>
+				</form>
+			</section>
+			<div id="modal-cancelar" class="modal js-modal-window">
+				<span class="close flaticon-close3 js-modal-close">Close</span>
+				<h3>¿Está seguro que desea cancelar la creación de la carrera?</h3>
+				<div class="form-row">
+					<a href="consultarCursoAgregado.html" class="btn btn-primary js-modal-aceptar">Si</a>
+					<a href="#" class="btn btn-default js-modal-close">No</a>
+				</div>
+			
+			</div>
+			<div id="listForm" class="backContent">
+				<fieldset class="frmLista">
+					<legend id="lblLegent"></legend>
+					<ul id="listElements">								
+					</ul>
+					<button id="btnVolver" class="btn btn-primary">Volver</button>
+				</fieldset>
+			</div>
+		</main>
+		
+		<footer>
+			<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+		</footer>
+	</div>
+
+	<!-- Load JS -->
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../js/jquery.html5uploader-1.1.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap-select.js"></script>
+	<script src="../js/flatui.js"></script>
+	<script src="../js/html5uploader.js"></script>
+	<script src="../js/common-logic.js"></script>
+	<script src="../js/configuracion.js"></script>
+</body>
+</html>

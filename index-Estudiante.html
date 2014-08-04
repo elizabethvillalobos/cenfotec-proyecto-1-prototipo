@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="css/gic.css">
+		<link rel="stylesheet" href="css/pages/dashboard.css">
+	</head>
+	<body>
+		<div class="wrapper dashboard-estudiante">
+			<header>
+				<a href="#" class="home">
+					<h1 class="logo">Gestor Inteligente de Citas</h1>
+				</a>
+
+				<!-- Menu principal -->
+				<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="citas/Estudiante/citas-Estudiante.html" class="citas flaticon-calendar68"><span>Citas</span></a>
+						</li>
+						<li>
+							<a href="evaluacion/Estudiante/miRanking-Estudiante.html" class="evaluacion flaticon-verification5"><span>Evaluación</span></a>
+						</li>
+						<li>
+							<a href="mensajeria/Estudiante/mensajeria-Estudiante.html" class="mensajeria flaticon-black218"><span>Mensajería</span></a>
+						</li>
+						<li>
+							<a href="reportes/Estudiante/reportes-Estudiante.html" class="reportes flaticon-seo2"><span>Reportes</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="busqueda">
+					<input id="q" type="text" value="" placeholder="Buscar personas" />
+					<button id="btnBuscar" class="flaticon-magnifier12" type="submit"></button>
+				</section>
+
+				<section class="usr-info">
+					<span class="usr-greeting">Bienvenido, Diego!</span>
+					<img class="usr-photo" src="images/users/diego-barillas.jpg" width="40" height="40">
+					<ul>
+						<li>
+							<a href="configuracion/Estudiante/perfil-Estudiante.html" class="usr-editar-perfil">Mi cuenta</a>
+						</li>
+						<li>
+							<a href="seguridad/iniciarSesion.html" class="usr-cerrar-sesion">Cerrar sesión</a>
+						</li>
+					</ul>
+				</section>
+			</header>
+
+			<main class="dashboard">
+				<section class="dash-agenda">
+					<a href="citas/citas.html">
+						<h3>Agenda</h3>
+					</a>
+
+					<ul class="dash-agenda-citas">
+						<li>
+							<a href="citas/citas.html" class="dash-agenda-cita">
+								<img class="dash-agenda-photo" src="images/users/pablo-monestel.jpg" width="50" height="50">
+								<span class="dash-agenda-fecha">Miércoles 23 de Julio</span>
+								<span class="dash-agenda-hora">6:00 p.m.</span>
+								<span class="dash-agenda-invitado">Pablo Monestel</span>
+							</a>
+						</li>
+						<li>
+							<a href="citas/citas.html" class="dash-agenda-cita">
+							<img class="dash-agenda-photo" src="images/users/default-user.png" width="50" height="50">
+								<span class="dash-agenda-fecha">Lunes 28 de Julio</span>
+								<span class="dash-agenda-hora">4:00 p.m.</span>
+								<span class="dash-agenda-invitado">Antonio Luna</span>
+							</a>
+						</li>
+					</ul>
+					<div class="dash-agenda-solicitudes">
+						<a href="citas/solicitarCita.html">
+							<h4>Solicitudes de Cita</h4>
+						</a>
+						<ul>
+							<li><a href="citas/solicitudes.html">Pablo Monestel</a></li>
+							<li><a href="citas/solicitudes.html">Antonio Luna</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="dash-ranking">
+					<a href="evaluacion/miRanking.html">
+						<h3>Mi Ranking</h3>
+					</a>
+					<span class="dash-ranking-amount rating-amount">3.5</span>
+					<ul class="rating-stars">
+						<li class="rating-1"></li>
+						<li class="rating-2"></li>
+						<li class="rating-3"></li>
+						<li class="rating-4"></li>
+						<li class="rating-5"></li>
+					</ul>
+					<span class="dash-ranking-asistidas rating-label">9 de 10 citas asistidas</span>
+				</section>
+				
+				<a href="mensajeria/mensajeria.html" class="dash-mensajes dash-notificacion">
+					<span class="dash-notificacion-label">Mensajes Nuevos</span>
+					<span class="dash-notificacion-total">5</span>
+				</a>
+				<a href="evaluacion/evaluarCita.html" class="dash-evaluaciones dash-notificacion">
+					<span class="dash-notificacion-label">Evaluaciones Pendientes</span>
+					<span class="dash-notificacion-total">3</span>
+				</a>
+			</main>
+			
+			<footer>
+				<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<!-- Load JS -->
+
+	</body>
+</html>

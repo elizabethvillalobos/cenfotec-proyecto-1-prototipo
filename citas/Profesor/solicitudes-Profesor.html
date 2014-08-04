@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="../../css/gic.css">
+		<link rel="stylesheet" href="../../css/pages/citas.css">
+	</head>
+	<body>
+		<div id="solicitudes" class="wrapper">
+			<header>
+				<a href="../../index-Profesor.html" class="home">
+					<h1 class="logo">Gestor Inteligente de Citas</h1>
+				</a>
+
+				<!-- Menu principal -->
+				<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="citas-Profesor.html" class="citas active flaticon-calendar68"><span>Citas</span></a>
+						</li>
+						<li>
+							<a href="../../evaluacion/profesor/miRanking-Profesor.html" class="evaluacion flaticon-verification5"><span>Evaluación</span></a>
+						</li>
+						<li>
+							<a href="../../mensajeria/profesor/mensajeria-Profesor.html" class="mensajeria flaticon-black218"><span>Mensajería</span></a>
+						</li>
+						<li>
+							<a href="../../reportes/profesor/reportes-Profesor.html" class="reportes flaticon-seo2"><span>Reportes</span></a>
+						</li>
+						<li>
+							<a href="../../configuracion/profesor/perfil-Profesor.html" class="configuracion flaticon-machine2"><span>Configuración</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="busqueda">
+					<input id="q" type="text" value="" placeholder="Buscar personas" />
+					<button id="btnBuscar" class="flaticon-magnifier12" type="submit"></button>
+				</section>
+
+				<section class="usr-info">
+					<span class="usr-greeting">Bienvenido, Pablo!</span>
+					<img class="usr-photo" src="../../images/users/pablo-monestel.jpg" width="40" height="40">
+					<ul>
+						<li>
+							<a href="../../configuracion/Profesor/perfil-profesor.html" class="usr-editar-perfil">Mi cuenta</a>
+						</li>
+						<li>
+							<a href="../../seguridad/iniciarSesion.html" class="usr-cerrar-sesion">Cerrar sesión</a>
+						</li>
+					</ul>
+				</section>
+			</header>
+
+			<aside>
+				<nav class="secondary-nav">
+					<ul class="sec-nav-category">
+						<li class="accordion-item">
+							<a href="citas-Profesor.html">Agenda</a>							
+						</li>
+						<li class="accordion-item expanded">
+							
+							<a href="#" class="active">Solicitudes de cita</a>
+							<ul class="thrd-nav-category accordion-detail">
+								<li><a href="solicitudes-Profesor.html" class="active">Ernesto Rivera</a></li>
+								 
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="solicitudInfo-Profesor.html">Walter Torres</a>
+								</li>
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="#">Olger Cubillo</a>
+								</li>
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="#">Rocío Solano</a>
+								</li>
+								<li>
+									<span class="listo flaticon-check34"></span>
+									<a href="#">Alejandro Villalobos</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+			<main>
+				<section class="cita">
+					<div class="mod-hd">
+						<h2>Ernesto Rivera</h2>
+						<span class="cita-hora-inicio-fin">Solicitud pendiente</span>
+					</div>
+					<div class="mod-bd">
+						<div class="row">
+							<span class="label">Solicitante:</span>
+							<div class="data-wrap">
+								<span class="data cita-invitado">Ernesto Rivera Rivera</span>
+								<span class="data">eriverar@ucenfotec.ac.cr</span>
+								<span class="data">2568-5635</span>
+							</div>
+						</div>
+
+						<img class="cita-photo" src="../../images/users/ernesto-rivera.jpg" width="75" height="75">
+
+						<div class="row">
+							<span class="label">Asunto a tratar:</span>
+							<span class="data">Duda sobre nota del examen.</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Curso:</span>
+							<span class="data">Programación orientada a objetos</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Lugar:</span>
+							<span class="data">Cenfotec</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Tipo:</span>
+							<span class="data">Individual</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Observaciones:</span>
+							<span class="data">Hola profe! Quería solicitarle el desgloce de mi nota ya que quiero mejorar en mis puntos más débiles.</span>
+						</div>
+						
+						
+						<h3>Asignación de fecha y hora</h3>
+						<form id="solicitarCita" class="form-horizontal" action="#" method="post">
+                            <div class="form-row">
+                                <label for="txtFecha">Fecha:</label>
+                                <input id="txtFecha" type="text" placeholder="Ingrese la fecha" class="form-control datepicker" />
+                            </div>
+
+                            <div class="form-row">
+                                <label for="txtHoraInicio">Hora de inicio:</label>
+                                <input id="txtHoraInicio" type="time" class="form-control form-control-time" />
+                            </div>
+
+                            <div class="form-row ">
+                                <label for="txtHoraFin">Hora de fin:</label>
+                                <input id="txtHoraFin" type="time" class="form-control form-control-time" />
+                            </div>							
+							
+                            <div class="form-row form-row-button">
+								<a href="solicitudPropuesta-Profesor.html" id="btnAceptar" class="btn btn-primary">Aceptar</a>
+								<a href="solicitudRechazada-Profesor.html" id="btnRechazar" class="btn btn-default js-modal" data-modal-id="modal-cancelar">Rechazar</a>
+							</div>                  
+						</form>
+						
+					</div>
+				</section>
+
+				
+				<div id="modal-cancelar" class="modal js-modal-window">
+					<span class="close flaticon-close3 js-modal-close">Close</span>
+					<h3>¿Está seguro que desea rechazar la solicitud de cita de atención?</h3>
+					<div class="form-row">
+						<a href="solicitudRechazada-Profesor.html" class="btn btn-primary js-modal-aceptar">Sí</a>
+						<a href="#" class="btn btn-default js-modal-close">No</a>
+					</div>
+				</div>
+			</main>
+			
+			<footer>
+				<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<!-- Load JS -->
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+
+		<!-- <script src="../../js/vendors/jquery-1.8.3.min.js"></script> -->
+		<!-- <script src="../../js/vendors/jquery-ui.js"></script> -->
+		<script src="../../js/gic.js"></script>
+        <script src="../../js/common-logic.js"></script>
+		<script src="../../js/solicitarCita.js"></script>
+	</body>
+</html>

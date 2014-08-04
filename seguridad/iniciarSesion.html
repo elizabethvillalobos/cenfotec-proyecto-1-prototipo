@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+		<meta charset="utf-8">
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/gic.css">
+		<link rel="stylesheet" href="../css/pages/seguridad.css">	
+	</head>
+	<body>
+		<header>
+			<h1 class="logo centrado">Gestor Inteligente de Citas</h1>
+        </header>
+		<main class='iniciarSesion'>
+				
+				<div class="mod-bd">
+				
+					<h2>Gestor Inteligente de Citas</h2>
+					<form  name="inicioSesion" id="login" action="" method="post">
+						<fieldset class="field">
+							<legend>Inicio</legend>
+							
+							<div class="form-row">
+								<label for="">Correo electrónico:</label>
+								<span class="flaticon-black218 icon"></span>
+								<input id="email" type="mail" placeholder="" class="form-control" />
+							</div>
+							<div class="form-row ">
+								<label for="">Contraseña:</label>
+								<span class="flaticon-lock26 icon"></span>
+								<input id="contrasena" type="password" placeholder=""  class="form-control" />
+							</div>
+							
+							<p class="alert-error flaticon-remove11 "></p>
+							
+							<div class="form-row form-row-button">
+								<button class="btn btn-primary">Iniciar sesión</button>
+								
+							</div>
+							
+							<div class="links">
+							    <a href="../seguridad/registrarUsuario.html" id="aRegistrar">Registrarse</a>
+							    <a href="" id="aOlvide">Olvidé mi contraseña</a>
+							</div>
+						</fieldset>
+					</form>
+
+				</div>
+			</main>
+			
+			<footer>
+				<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+		
+		<!-- Load JS -->
+		<script src="../js/common-logic.js"></script>
+        <script src="../seguridad/iniciarSesion.js"></script>
+	</body>
+</html>

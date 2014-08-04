@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+		<meta charset="utf-8">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/flaticon.css">
+		<link rel="stylesheet" href="css/gic.css">
+		<link rel="stylesheet" href="css/configuracion.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="../index.html" class="home">
+					<h1 class="logo">Gestor Inteligente de Citas</h1>
+				</a>
+
+				<!-- Menu principal -->
+				<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="citas.html" class="citas flaticon-calendar68"><span>Citas</span></a>
+						</li>
+						<li>
+							<a href="evaluacion.html" class="evaluacion flaticon-verification5"><span>Evaluación</span></a>
+						</li>
+						<li>
+							<a href="mensajeria.html" class="mensajeria flaticon-black218"><span>Mensajería</span></a>
+						</li>
+						<li>
+							<a href="reportes.html" class="reportes flaticon-seo2"><span>Reportes</span></a>
+						</li>
+						<li>
+							<a href="configuracion.html" class="configuracion active flaticon-machine2"><span>Configuración</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="busqueda">
+					<input id="q" type="text" value="" placeholder="Buscar personas" />
+					<button id="btnBuscar" class="flaticon-magnifier12" type="submit"></button>
+				</section>
+
+				<section class="usr-info">
+					<span class="usr-greeting">Bienvenido, Carlos!</span>
+					<img class="usr-photo" src="images/users/default-user.png" width="40" height="40">
+					<ul>
+						<li>
+							<a href="#" class="usr-editar-perfil">Editar perfil</a>
+						</li>
+						<li>
+							<a href="#" class="usr-cerrar-sesion">Cerrar sesión</a>
+						</li>
+					</ul>
+				</section>
+			</header>
+
+			<aside>
+				<nav class="secondary-nav">
+					<ul class="sec-nav-category">
+						<li>
+							<a href="#" class="active">Configuración</a>
+							<ul class="thrd-nav-category">
+								<li><a href="#">Mi cuenta</a></li>
+								<li><a href="#">Mi Cuenta</a></li>
+								<li><a href="consultarCarreras.html" class="active">Carreras y cursos</a></li>
+								<li><a href="#">Usuarios</a></li>
+								<li><a href="#">General</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+			<main>
+				<h2>Crear una nueva carrera</h2>
+				<form id="crear-carrera" method="post">
+					<fieldset>
+						<div class="form-row">
+							<label for="">Código:</label>
+							<input id="txtCodCarrera" class="form-control" type="text" value="" 
+								placeholder="Ingrese el dato..." >
+						</div>
+						<div class="form-row">
+							<label for="">Nombre:</label>
+							<input id="txtNombreCarrera" class="form-control" type="text" value="" 
+								placeholder="Ingrese el dato...">
+						</div>
+						<div class="form-row">
+                        	<label for="select1">Director Académico:</label>
+                            <select id="select1">
+                            	<option value="">Seleccione una opción</option>
+                                <option value="0">Director Académico1</option>
+                                <option value="1">Director Académico2</option>
+                                <option value="3">Director Académico3</option>
+                                <option value="4">Director Académico4</option>
+                            </select>
+                        </div>
+                        <p class="alert-error flaticon-remove11"></p>
+                        <div class="form-row form-row-buttonCrearCarrera">
+							<input type="button" class="btn btnGuardar-primary" id="btnCrearCarrera" value="Guardar">
+							<button class="btn btnCancelar-secondary">Cancelar</button>
+						</div>
+					</fieldset>
+				</form>
+			</main>
+			<footer>
+				<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+		<!-- Load JS-->
+		<script src="js/vendors/jquery-1.8.3.min.js"></script>
+		<script src="js/vendors/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/vendors/bootstrap.min.js"></script>
+        <script src="js/vendors/bootstrap-select.js"></script>
+		<script src="js/vendors/flatui-checkbox.js"></script>
+		<script src="js/vendors/flatui-radio.js"></script>
+        <script src="js/gic.js"></script>
+        <script src="js/pruebaConfiguracion.js"></script>
+        <script src="js/common-logic.js"></script> 
+	</body>
+</html>

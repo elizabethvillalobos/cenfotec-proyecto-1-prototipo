@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Universidad Cenfotec - Gestor Ingeligente de Citas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="../../css/gic.css">
+		<link rel="stylesheet" href="../../css/pages/citas.css">
+	</head>
+	<body id="page-agenda">
+		<div class="wrapper">
+			<header>
+				<a href="../../index-Estudiante.html" class="home">
+					<h1 class="logo">Gestor Inteligente de Citas</h1>
+				</a>
+
+				<!-- Menu principal -->
+				<nav class="main-nav">
+					<ul>
+						<li>
+							<a href="citas-Estudiante.html" class="citas active flaticon-calendar68"><span>Citas</span></a>
+						</li>
+						<li>
+							<a href="../../evaluacion/estudiante/miRanking-Estudiante.html" class="evaluacion flaticon-verification5"><span>Evaluación</span></a>
+						</li>
+						<li>
+							<a href="../../mensajeria/estudiante/mensajeria-Estudiante.html" class="mensajeria flaticon-black218"><span>Mensajería</span></a>
+						</li>
+						<li>
+							<a href="../../reportes/estudiante/reportes-Estudiante.html" class="reportes flaticon-seo2"><span>Reportes</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="busqueda">
+					<input id="q" type="text" value="" placeholder="Buscar personas" />
+					<button id="btnBuscar" class="flaticon-magnifier12" type="submit"></button>
+				</section>
+
+				<section class="usr-info">
+					<span class="usr-greeting">Bienvenido, Diego!</span>
+					<img class="usr-photo" src="../../images/users/diego-barillas.jpg" width="40" height="40">
+					<ul>
+						<li>
+							<a href="../../configuracion/Estudiante/perfil-Estudiante.html" class="usr-editar-perfil">Mi cuenta</a>
+						</li>
+						<li>
+							<a href="../../seguridad/iniciarSesion.html" class="usr-cerrar-sesion">Cerrar sesión</a>
+						</li>
+					</ul>
+				</section>
+			</header>
+
+			<aside>
+				<nav class="secondary-nav">
+					<ul class="sec-nav-category">
+						<li class="accordion-item expanded">
+							<a href="citas.html" class="active">Agenda</a>
+							<div id="agenda" class="accordion-detail">
+								<input id="agenda-fecha" type="text" class="datepicker" />
+							</div>
+						</li>
+						<li class="accordion-item">
+							<span id="crearSolicitud" class="flaticon-add73"></span>
+							<a href="solicitarCita-Estudiante.html">Solicitudes de cita</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+			<main>
+				<section class="cita cita-23-07-2014 visible">
+					<div class="mod-hd">
+						<h2>Miércoles 23 de Julio</h2>
+						<span class="cita-hora-inicio-fin">6:00 p.m. a 7:00 p.m.</span>
+					</div>
+					<div class="mod-bd">
+						<div class="row">
+							<span class="label">Invitado:</span>
+							<div class="data-wrap">
+								<span class="data cita-invitado">Pablo Monestel</span>
+								<span class="data">pmonestel@ucenfotec.ac.cr</span>
+								<span class="data">8719-5966</span>
+							</div>
+						</div>
+
+						<img class="cita-photo" src="../../images/users/pablo-monestel.jpg" width="75" height="75">
+
+						<div class="row">
+							<span class="label">Asunto a tratar:</span>
+							<span class="data">Javascript, manejo del DOM</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Curso:</span>
+							<span class="data">Proyecto de ingeniería de software 1</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Modalidad:</span>
+							<span class="data">Presencial</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Tipo:</span>
+							<span class="data">Individual</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Observaciones:</span>
+							<span class="data">Hola profesor, quiero recibir una tutoría en javascript sobre cómo manejar el DOM.</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="cita cita-28-07-2014">
+					<div class="mod-hd">
+						<h2>Lunes 28 de Julio</h2>
+						<span class="cita-hora-inicio-fin">4:00 p.m. a 5:00 p.m.</span>
+					</div>
+					<div class="mod-bd">
+						<div class="row">
+							<span class="label">Invitado:</span>
+							<div class="data-wrap">
+								<span class="data cita-invitado">Antonio Luna</span>
+								<span class="data">aluna@ucenfotec.ac.cr</span>
+								<span class="data">7002-2000</span>
+							</div>
+						</div>
+
+						<img class="cita-photo" src="../../images/users/default-user.png" width="75" height="75">
+
+						<div class="row">
+							<span class="label">Asunto a tratar:</span>
+							<span class="data">Algoritmos</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Curso:</span>
+							<span class="data">Fundamentos de programación</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Modalidad:</span>
+							<span class="data">Presencial</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Tipo:</span>
+							<span class="data">Individual</span>
+						</div>
+
+						<div class="row">
+							<span class="label">Observaciones:</span>
+							<span class="data">Hola profe, necesito que me explique más acerca de algoritmos.</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="cita no-cita">
+					<p class="flaticon-information38">No hay citas agendadas.</p>
+				</section>
+
+				<div id="modal-cancelar" class="modal js-modal-window">
+					<span class="close flaticon-close3 js-modal-close">Close</span>
+					<h3>¿Está seguro que desea rechazar la fecha y hora sugeridas?</h3>
+					<div class="form-row">
+						<a href="citaCancelada.html" class="btn btn-primary js-modal-aceptar">Sí</a>
+						<a href="#" class="btn btn-default js-modal-close">No</a>
+					</div>
+				</div>
+			</main>
+			
+			<footer>
+				<p>2014 Universidad Cenfotec. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<!-- Load JS -->
+		<script src="../../js/vendors/jquery-1.8.3.min.js"></script>
+		<script src="../../js/vendors/jquery-ui.js"></script>
+		<script src="../../js/gic.js"></script>
+        <script src="../../js/common-logic.js"></script>
+        <script src="../../js/citas.js"></script>
+	</body>
+</html>

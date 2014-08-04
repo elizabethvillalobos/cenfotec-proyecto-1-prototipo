@@ -1,0 +1,202 @@
+main {
+	background: #f2f2f2; 
+	margin-left: 0;
+	padding: 10px;
+	overflow: visible;
+}
+
+.dashboard a:hover {
+	color: #c0392b;
+}
+
+.dashboard h3,
+.dashboard h4 {
+	background: #ccc;
+	color: #666;
+	font: 18px Oswald, sans-serif;
+	margin: 0;
+	padding: 20px 15px;
+	text-transform: uppercase;
+}
+
+.dash-agenda,
+.dash-notificacion,
+.dash-ranking {
+	background: #ffffff;
+	float: left;
+	margin: 0 0.65%;
+	width: 30%;
+}
+
+/*Agenda*/
+
+.dash-agenda {
+	background: #e74c3c;
+	height: 440px;
+	width: 36%;
+}
+
+.dash-agenda h3 {
+	background: #c0392b;
+	color: #f2f2f2;
+}
+
+.dash-agenda-citas {
+	height: 212px;
+	margin: 0;
+	padding: 0;
+}
+
+.dash-agenda-citas a {
+	color: #f2f2f2;
+	display: block;
+	overflow: hidden;
+	padding: 10px 15px 10px;
+	transition: background 0.3s;
+}
+
+.dash-agenda-citas a:hover {
+	background: #c0392b;
+	color: #f2f2f2;
+
+}
+
+.dash-agenda-citas li {
+	border-bottom: 1px solid #c0392b;
+	color: #f2f2f2;
+	list-style: none;
+	overflow: hidden;
+	position: relative;
+}
+
+.dash-agenda-cita span {
+	font-size: 1em;
+	float: left;
+}
+
+.dash-agenda-fecha {
+	width: 55%;
+}
+
+.dash-agenda-hora {
+	float: right;
+	text-align: right;
+	width: 22%;
+}
+
+.dash-agenda-photo {
+	border: 1px solid #c0392b;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	margin-right: 10px;
+}
+
+
+/*Solicitudes*/
+.dash-agenda-solicitudes {
+	background: #666;
+	height: 162px;
+}
+
+.dash-agenda-solicitudes a {
+	color: #ccc;
+}
+
+.dash-agenda-solicitudes h4 {
+	background: #3c3c3c;
+	color: #ccc;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 20px;
+}
+
+.dash-agenda-solicitudes ul {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0 20px;
+}
+
+.dash-agenda-solicitudes li {
+	line-height: 2;
+}
+
+/*Mensajes y evaluaciones*/
+.dashboard .dash-mensajes {
+	margin-bottom: 10px;
+}
+
+.dash-notificacion {
+	display: block;
+	height: 215px;
+	text-align: center;
+}
+
+.dash-notificacion {
+	color: #666;
+}
+
+.dash-notificacion-label {
+	display: block;
+	font: 16px Oswald, sans-serif;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.dash-notificacion-total {
+	display: block;
+	font: 90px Arial, sans-serif;
+}
+
+
+/*Ranking*/
+.dash-ranking {
+	height: 440px;
+}
+
+.dash-ranking-amount {
+	display: block;
+	font: 90px Arial, sans-serif;
+	margin-top: 90px;
+	text-align: center;
+}
+
+.dash-ranking-asistidas {
+	display: block;
+	text-align: center;
+}
+
+/*Ranking stars*/
+.rating-stars {
+	background: url('../../images/system/star-inactive.png') left top repeat-x;
+	height: 36px;
+	margin: 0 auto 30px;
+	padding: 0;
+	text-align: center;
+	width: 200px;
+}
+
+.rating-stars li {
+	background: url('../../images/system/star-active.png') no-repeat left top;
+	float: left;
+	height: 36px;
+	list-style: none;
+	width: 40px;
+}
+
+li.rating-5 {
+	width: 28px;
+}
+
+.dashboard-estudiante .rating-4 {
+	width: 20px;
+}
+
+.dashboard-estudiante .rating-5 {
+	display: none;
+}
+
+.dashboard-profesor .rating-4,
+.dashboard-profesor .rating-5 {
+	display: block;
+}
